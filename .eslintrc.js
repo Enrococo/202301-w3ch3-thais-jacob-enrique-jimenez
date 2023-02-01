@@ -34,5 +34,10 @@ module.exports = {
         caughtErrorsIgnorePattern: /^_$/.source,
       },
     ],
+    "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/no-inferrable-types": ["error",  {
+  ignoreParameters?: boolean;
+  ignoreProperties?: boolean;
+}],
   },
 };

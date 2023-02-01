@@ -1,5 +1,5 @@
 export default class Component {
-  #element: HTMLElement;
+  protected element: HTMLElement;
   #parentElement: HTMLElement | null;
 
   constructor(
@@ -7,12 +7,12 @@ export default class Component {
     tag: string,
     cssClasses: string = ""
   ) {
-    this.#element = document.createElement(tag);
-    this.#element.className = cssClasses;
+    this.element = document.createElement(tag);
+    this.element.className = cssClasses;
     this.#parentElement = parentElement;
   }
 
   render() {
-    this.#parentElement?.appendChild(this.#element);
+    this.#parentElement?.appendChild(this.element);
   }
 }

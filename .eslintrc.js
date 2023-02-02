@@ -35,9 +35,5 @@ module.exports = {
       },
     ],
     "@typescript-eslint/ban-types": "error",
-    "@typescript-eslint/no-inferrable-types": ["error",  {
-  ignoreParameters?: boolean;
-  ignoreProperties?: boolean;
-}],
   },
 };
